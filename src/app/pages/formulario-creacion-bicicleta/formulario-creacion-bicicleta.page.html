@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Volver"></ion-back-button>
+    </ion-buttons>
+    <ion-title>FormularioCreacionBicicleta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-input [(ngModel)]="objBicicleta.Marca" type="text" placeholder="Marca:"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="objBicicleta.Descripcion" type="text" placeholder="Descripcion:"></ion-input>
+  </ion-item>
+
+  <div id="map_canvas"></div>
+
+
+</ion-content>
+<ion-footer>
+  <ion-button expand="full" (click)="guardarBicicleta()">Guardar datos</ion-button>
+</ion-footer>

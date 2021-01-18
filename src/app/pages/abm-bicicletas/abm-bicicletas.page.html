@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Volver"></ion-back-button>
+    </ion-buttons>
+    <ion-title>AbmBicicletas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  Lista Bicicletas
+  <ion-item *ngFor="let itemBicicleta of listaBicicletas">
+    <app-lista-bicicleta-administracion [itemBicicleta]='itemBicicleta'
+    (propagar)="procesaPropagar($event)"></app-lista-bicicleta-administracion>
+  </ion-item>
+</ion-content>
+
+<ion-footer>
+  <ion-button color="secondary" [routerLink]="['/formulario-creacion-bicicleta/0']">Crear Bicicleta</ion-button>
+</ion-footer>

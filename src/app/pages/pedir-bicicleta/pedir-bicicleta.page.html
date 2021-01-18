@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Volver"></ion-back-button>
+    </ion-buttons>
+    <ion-title>PedirBicicleta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    El id de la Bicicleta es {{idBicicleta}}
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="objBicicleta.Marca" type="text" placeholder="Marca:"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="objBicicleta.Descripcion" type="text" placeholder="Descripcion:"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="objBicicleta.Estado" type="text" placeholder="Descripcion:"></ion-input>
+  </ion-item>
+</ion-content>
+
+
+<ion-footer>
+  <ion-button expand="full" (click)="rentarBicicleta()">Rentar Bicicleta</ion-button>
+</ion-footer>

@@ -1,0 +1,38 @@
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <a>Numero de Bicicleta {{objBicicletaDetalle.Id}}</a>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <a>Marca de la Bicicleta es </a>
+    </ion-col>
+    <ion-col>
+      <a> {{objBicicletaDetalle.Marca}}</a>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <a>Descripcion de Bicicleta </a>
+    </ion-col>
+    <ion-col>
+      <a>{{objBicicletaDetalle.Descripcion}}</a>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <a>Estado de Bicicleta </a>
+    </ion-col>
+    <ion-col>
+      <a>{{objBicicletaDetalle.Estado}}</a>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    Marque Donde esta dejando la bici
+    <div id="map_canvas3"></div>
+  </ion-row>
+  <ion-row>
+    <ion-button expand="full" (click)="dejarBicicleta()">Dejar Bicicleta</ion-button>
+  </ion-row>
+</ion-grid>

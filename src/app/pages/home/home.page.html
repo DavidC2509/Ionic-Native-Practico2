@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Practico2 David
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="objBicicletaDetalle.Estado as value; else elseBlock"><app-detalle-bicicleta [objBicicletaDetalle]='objBicicletaDetalle'></app-detalle-bicicleta></div>
+  <ng-template #elseBlock><app-mapa [listaBicicletas]='listaBicicletas'></app-mapa></ng-template>
+</ion-content>
+
+<ion-footer>
+  <ion-button color="secondary" [routerLink]="['/abm-bicicletas']">Ir a ABM Bicicletas</ion-button>
+</ion-footer>

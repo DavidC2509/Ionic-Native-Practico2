@@ -1,0 +1,19 @@
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <a>Su Numero Bicicleta es {{itemBicicleta.Id}}</a>
+    </ion-col>
+    <ion-col>
+      <a>Marca Bicicleta es {{itemBicicleta.Marca}}</a>
+    </ion-col>
+    <ion-col>
+      <a>Estado es {{itemBicicleta.Estado}}</a>
+    </ion-col>
+    <ion-col>
+      <ion-button [routerLink]="[ '/formulario-creacion-bicicleta/',itemBicicleta.Id]">Editar Bicicleta</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button (click)="eleminarBicicleta(itemBicicleta.Id)">Eleminar Bicicleta</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
